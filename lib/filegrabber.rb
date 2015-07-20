@@ -6,4 +6,3 @@ require 'filegrabber/document_page'
 require 'filegrabber/downloaded_document'
 require 'filegrabber/remote_document'
 require 'filegrabber/grab'
-

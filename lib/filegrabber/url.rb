@@ -8,7 +8,7 @@ module FileGrabber
 
     def get_body
       if HTTP_BASIC_AUTH[:password].nil?
-        puts "Please provide a basic auth password."
+        Log.error "Please provide a basic auth password."
         exit 1
       end
       Unirest.get(@url.to_s, auth: unirest_auth).body
