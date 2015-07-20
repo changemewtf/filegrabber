@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'filegrabber'
+require 'filegrabber/cli'
+
+FileGrabber::CLI.start ARGV
