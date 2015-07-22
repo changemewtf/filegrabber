@@ -18,9 +18,13 @@ module FileGrabber
     private
 
     def download_anchor selector
-      Nokogiri::HTML(FileGrabber::URL.new(@url).get_body)
+      Nokogiri::HTML(html)
         .css(selector)
         .first
+    end
+
+    def html
+      FileGrabber::URL.new(@url).get_body
     end
   end
 end
